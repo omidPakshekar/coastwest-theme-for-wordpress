@@ -402,6 +402,7 @@ body {
 .home-product-info {
     background-color: $primary;
     padding-top: 200px;
+    padding-bottom: 30px;
     .home-special-offer-background-overlay {
         position: relative;
         &:before {
@@ -644,51 +645,56 @@ body {
         }
        
     }
-
-    .home-we-accept {
-        margin-top: 75px;
-        .title-holder{
-            display: flex;
-            h2 {
-                flex: 1;
-                font-size: 48px;
-                color: black;
-                font-weight: bold;
-                margin-bottom: 30px;
-                @media (max-width: $lg) {
-                    font-size: 30px;
-                    text-align: center;
-                    margin-top: 30px;
-                }
-            }
-            .button-holder{
-                margin-bottom: 30px;
-                &.top {
-                    @media (max-width: $lg) {
-                        display: none;
-                    }
-                }
-                &.bottom {
-                    display: none;
-                    @media (max-width: $lg) {
-                        display: block;
-                    }
-                }
-                .button{
-
-                }
-            }           
-        }
-        .circle {
-            margin-top: 30px;
-            font-weight: bold;
-            text-align: center;
-            color: black;
-            margin-top: 30px;
-        }
-    }
     
 }
+
+
+
+.footer-we-accept {
+    background-color: $primary;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    .title-holder{
+        display: flex;
+        h2 {
+            flex: 1;
+            font-size: 48px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 30px;
+            @media (max-width: $lg) {
+                font-size: 30px;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+        .button-holder{
+            margin-bottom: 30px;
+            &.top {
+                @media (max-width: $lg) {
+                    display: none;
+                }
+            }
+            &.bottom {
+                display: none;
+                @media (max-width: $lg) {
+                    display: block;
+                }
+            }
+            .button{
+
+            }
+        }           
+    }
+    .circle {
+        margin-top: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        margin-top: 30px;
+    }
+}
+
 #wrapper-footer {
     padding-top: 100px;
     @media (max-width: $lg) {
@@ -974,6 +980,7 @@ body {
     height: 600px;
     background: black;
     background-size: cover ;
+    background-image: url(../img/page-placeholder.png);
     background-position: center;
     display: flex;
     justify-content: flex-end;
@@ -998,6 +1005,51 @@ body {
     font-weight: 400;
     color: black;
     margin-bottom: 50px;
+    padding-bottom: 50px;
+} 
+
+.post-navigation-options {
+    border-top: 4px dashed $primary;
+    margin-top: 50px;
+    padding-top: 50px;
+    a {
+        display: inline-block;
+        color: white;
+        border: 1px solid $primary;
+        padding: 0.5em 1em;
+        background: black;
+        border-radius: 1.5em;
+        font-size: 20px;
+        @media(max-width: $md){
+            margin-left: 0px;
+        }
+        &.outline{
+            background: transparent;
+            border-radius: 1px solid black;
+            color: black;
+            &:hover {
+                background: black;
+                color: $primary;
+                text-decoration: none;
+
+            }
+        }
+        &.top-header-contact-email {
+            @media(max-width: $xl){
+                display: none;
+            }
+        }
+        .fa{
+            color: $primary;
+            margin-right: 0.5em;
+        }
+        transition: ease 0.25s all;
+        &:hover {
+            background: $primary;
+            color: black;
+            text-decoration: none;
+        }
+    }
 }
 
 .right-sidebar-blog-categories{

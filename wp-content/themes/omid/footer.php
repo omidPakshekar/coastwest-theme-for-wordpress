@@ -13,6 +13,64 @@ defined( 'ABSPATH' ) || exit;
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
+
+<div class="footer-we-accept">
+		<div class="container">
+			<div class="title-holder">
+				<h2>we accept the following wast</h2>
+				<div class="button-holder top">
+					<a href="" class="button outline">read the full list of acceptable waste</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-sm-6">
+					<div class="circle">
+						<div class="abs-holder">
+							<img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/home-we-accept-11.svg" alt="We accept waste">
+							<div class="title">
+								Commercial waste
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="circle">
+						<div class="abs-holder">
+							<img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/home-we-accept-11.svg" alt="We accept waste">
+							<div class="title">
+								Commercial waste
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="circle">
+						<div class="abs-holder">
+							<img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/home-we-accept-11.svg" alt="We accept waste">
+							<div class="title">
+								Commercial waste
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6">
+					<div class="circle">
+						<div class="abs-holder">
+							<img width="100%" src="<?php echo get_template_directory_uri(); ?>/img/home-we-accept-11.svg" alt="We accept waste">
+							<div class="title">
+								Commercial waste
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="button-holder top">
+				<a href="" class="button outline">read the full list of acceptable waste</a>
+			</div>
+		</div>
+	</div>
+
+
 <div class="wrapper" id="wrapper-footer">
 
     <div class="footer-testimonial">
