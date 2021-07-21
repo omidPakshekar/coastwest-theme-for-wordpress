@@ -1109,3 +1109,59 @@ body {
     }
 }
 
+.template-contact-us {
+    font-size: 20px;
+    i {
+        color: $primary;
+        max-width: 40px;
+    }
+    a {
+        color: white;
+        i {
+            color: $primary;
+            max-width: 40px;
+        }
+    }
+    .iframe-holder {
+        position: relative;
+        height: 250px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        overflow: hidden;
+        iframe {
+            position: absolute;;
+            top: 0;bottom: 0;right: 0;left: 0;
+        }
+    }
+    .wpcf7 {
+        background: $primary;
+        padding: 30px;
+        border-radius: 30px;
+        margin-top: 50px!important;
+        margin-bottom: 50px!important;
+
+        h3{
+            color: black;
+            margin-bottom: 1em;
+        }
+        @media (max-width: $lg) {
+            margin-top: 30px;
+        }
+        input, textarea {
+            border-radius: 10px;
+            margin-bottom: 5px;
+            font-size: 18px;
+            background: white;
+            border: none;
+            height: auto;
+            outline: none;
+            &[type="submit"]{
+                display: inline-block;
+                background: $primary-500;
+                color: white;
+                width: auto;
+            }
+   
+         }
+    }   
+}
