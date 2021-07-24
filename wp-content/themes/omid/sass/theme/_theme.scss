@@ -830,9 +830,12 @@ body {
 }
 
 #main {
-    .entry-content {
+    .entry-content, .entry-summary, .wocommerce-tabs {
         h2 {
             margin-bottom: 1em;
+        }
+        h3 {
+            color: $primary;
         }
         ul {
             list-style: none;
@@ -1067,6 +1070,9 @@ body {
             margin: 0;
             padding: 0;
             font-weight: 500;
+            a {
+                color: white;
+            }
             &:before {
                 content: "\f0a9";
                 display: inline-block;
@@ -1164,4 +1170,73 @@ body {
    
          }
     }   
+}
+
+#main {
+    margin-bottom: 90px;
+    article.post {
+        color: black;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: white;
+        min-height: 500px;
+        @media (max-width : $lg) {
+            min-height: auto;
+        }
+
+        .archive-post-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-image: url(../img/page-placeholder.png);
+        }
+        .article-body-holder{
+            padding: 30px;
+            h2 {
+                a{
+                    font-size: 30px;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+            .entry-content{
+                font-weight: 300;
+                line-height: 1.15;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .entry-metadata {
+                display: flex;
+                align-items: center;
+                @media (max-width: $xl) {
+                    display: block;
+                }
+
+                .date {
+                    margin-left: 15px;
+                    font-weight: 300;
+                    @media (max-width: $xl) {
+                        margin-left: 0;
+                        margin-top: 15px;
+                    }
+                    .fa {
+                        color: $primary;
+                        margin-right: 5px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+    display: none;
+}
+
+.woocommerce div.product .product_title{
+    font-size: 48px;
+    font-weight: 300;
+    color: $primary;
 }

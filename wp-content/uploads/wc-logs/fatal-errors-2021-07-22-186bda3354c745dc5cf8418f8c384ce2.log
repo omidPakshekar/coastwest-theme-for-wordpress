@@ -1,0 +1,11 @@
+2021-07-22T21:32:04+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type resource, null given in /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-filesystem-ftpext.php:420
+Stack trace:
+#0 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-filesystem-ftpext.php(420): ftp_nlist(NULL, '/home/omid/prog...')
+#1 /home/omid/programe/wordpress/coastwest/www2/wp-content/plugins/woocommerce/includes/integrations/maxmind-geolocation/class-wc-integration-maxmind-geolocation.php(182): WP_Filesystem_FTPext->exists('/home/omid/prog...')
+#2 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp-hook.php(292): WC_Integration_MaxMind_Geolocation->update_database()
+#3 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#4 /home/omid/programe/wordpress/coastwest/www2/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#5 /home/omid/programe/wordpress/coastwest/www2/wp-cron.php(138): do_action_ref_array('woocommerce_geo...', Array)
+#6 {main}
+  thrown in /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-filesystem-ftpext.php on line 420
+

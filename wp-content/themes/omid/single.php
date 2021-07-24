@@ -69,12 +69,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="right-sidebar-blog-categories">
 					<h3>Blog Categories</h3>
 					<ul>
-						<li>Garden & Household clean-up</li>
-						<li>Garden & Household clean-up</li>
-						<li>Garden & Household clean-up</li>
-						<li>Garden & Household clean-up</li>
-						<li>Garden & Household clean-up</li>
-						<li>Garden & Household clean-up</li>
+						<?php
+							$categories = get_categories();
+							foreach ($categories as $category) {
+								echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . ' </a> </li>';
+							}
+						?>
 					</ul>
 				</div>
 			</div>

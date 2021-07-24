@@ -106,11 +106,13 @@ if ( is_front_page() ) {
 						<div class="col-xl-4 col-md-6">
 							<div class="title">4 Cubic Metre Skip</div>
 							<ul>
-								<li>Garden & Household clean-up</li>
-								<li>Heavy Loads (dirt, concrete, bricks or rubble)</li>
-								<li>Heavy Loads (dirt, bricks or rubble)</li>
-								<li>Heavy Loads </li>
-							</ul>
+							<?php
+								$categories = get_categories();
+								foreach ($categories as $category) {
+									echo '<li><a href="' . get_category_link($category->term_id) . '">' . $category->name . ' </a> </li>';
+								}
+							?>
+						</ul>
 						</div>
 						<div class="col-xl-4 col-lg-12">
 							<div class="home-product-circles">
