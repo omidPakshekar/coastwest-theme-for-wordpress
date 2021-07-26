@@ -1,0 +1,46 @@
+2021-07-26T08:29:16+00:00 CRITICAL Uncaught Error: Call to undefined function submit_button() in /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/file.php:2304
+Stack trace:
+#0 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-upgrader-skin.php(139): request_filesystem_credentials('', 'ftpext', false, '/home/omid/prog...', Array, false)
+#1 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-automatic-upgrader-skin.php(49): WP_Upgrader_Skin->request_filesystem_credentials(false, '/home/omid/prog...', false)
+#2 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-site-health-auto-updates.php(282): Automatic_Upgrader_Skin->request_filesystem_credentials(false, '/home/omid/prog...')
+#3 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-site-health-auto-updates.php(36): WP_Site_Health_Auto_Updates->test_check_wp_filesystem_method()
+#4 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-site-health.php(1787): WP_Site_Health_Auto_Updates->run_tests()
+#5 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api/endpoints/class-wp-rest-site-health-controller.php(194): WP_Site_Health->get_test_background_updates()
+#6 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api/class-wp-rest-server.php(1139): WP_REST_Site_Health_Controller->test_background_updates(Object(WP_REST_Request))
+#7 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp-site-health...', Array, NULL)
+#8 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/wp-site-health...')
+#10 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#11 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#12 /home/omid/programe/wordpress/coastwest/www2/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#13 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp.php(388): do_action_ref_array('parse_request', Array)
+#14 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp.php(750): WP->parse_request('')
+#15 /home/omid/programe/wordpress/coastwest/www2/wp-includes/functions.php(1291): WP->main('')
+#16 /home/omid/programe/wordpress/coastwest/www2/wp-blog-header.php(16): wp()
+#17 /home/omid/programe/wordpress/coastwest/www2/index.php(17): require('/home/omid/prog...')
+#18 {main}
+  thrown in /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/file.php on line 2304
+
+2021-07-26T08:51:05+00:00 CRITICAL Uncaught Error: Call to undefined function submit_button() in /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/file.php:2304
+Stack trace:
+#0 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-upgrader-skin.php(139): request_filesystem_credentials('', 'ftpext', false, '/home/omid/prog...', Array, false)
+#1 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-automatic-upgrader-skin.php(49): WP_Upgrader_Skin->request_filesystem_credentials(false, '/home/omid/prog...', false)
+#2 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-site-health-auto-updates.php(282): Automatic_Upgrader_Skin->request_filesystem_credentials(false, '/home/omid/prog...')
+#3 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-site-health-auto-updates.php(36): WP_Site_Health_Auto_Updates->test_check_wp_filesystem_method()
+#4 /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/class-wp-site-health.php(1787): WP_Site_Health_Auto_Updates->run_tests()
+#5 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api/endpoints/class-wp-rest-site-health-controller.php(194): WP_Site_Health->get_test_background_updates()
+#6 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api/class-wp-rest-server.php(1139): WP_REST_Site_Health_Controller->test_background_updates(Object(WP_REST_Request))
+#7 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api/class-wp-rest-server.php(985): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp-site-health...', Array, NULL)
+#8 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api/class-wp-rest-server.php(412): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#9 /home/omid/programe/wordpress/coastwest/www2/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/wp-site-health...')
+#10 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp-hook.php(292): rest_api_loaded(Object(WP))
+#11 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#12 /home/omid/programe/wordpress/coastwest/www2/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#13 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp.php(388): do_action_ref_array('parse_request', Array)
+#14 /home/omid/programe/wordpress/coastwest/www2/wp-includes/class-wp.php(750): WP->parse_request('')
+#15 /home/omid/programe/wordpress/coastwest/www2/wp-includes/functions.php(1291): WP->main('')
+#16 /home/omid/programe/wordpress/coastwest/www2/wp-blog-header.php(16): wp()
+#17 /home/omid/programe/wordpress/coastwest/www2/index.php(17): require('/home/omid/prog...')
+#18 {main}
+  thrown in /home/omid/programe/wordpress/coastwest/www2/wp-admin/includes/file.php on line 2304
+

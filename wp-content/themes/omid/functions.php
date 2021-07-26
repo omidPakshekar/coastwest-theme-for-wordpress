@@ -30,6 +30,10 @@ $understrap_includes = array(
 	'/moshi.php',
 );
 
+// remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+
 // Load WooCommerce functions if WooCommerce is activated.
 if ( class_exists( 'WooCommerce' ) ) {
 	$understrap_includes[] = '/woocommerce.php';
@@ -44,3 +48,12 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once $understrap_inc_dir . $file;
 }
+
+add_filter("woocommerce_product_single_add_to_cart_text", "woocommerce_custom_add_to_cart_text");
+
+function woocommerce_custom_add_to_cart_text() {
+	return __("Order this Skip Bin", 'woocommerce');
+}
+
+
+

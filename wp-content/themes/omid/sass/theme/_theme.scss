@@ -1240,3 +1240,144 @@ body {
     font-weight: 300;
     color: $primary;
 }
+
+.product-single-dimensions{
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    strong {
+        font-weight: 500;
+    }
+}
+
+.product-single-sizing {
+
+    .circle {
+        width: 100%;
+        padding-top: 100%;
+        background: $primary;
+        border-radius: 50%;
+        position: relative;
+        @media (max-width: $md) {
+            margin-top: 15px;
+            
+        }
+
+        .abs-circle-holder {
+            position: absolute;
+            top:15px;
+            left:15px;
+            right: 15px;
+            bottom: 15px;
+            display: flex;
+            color: black;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            line-height: 1;
+            .content-holder{
+                font-weight: 500;
+                font-size: 16px;
+
+
+            }
+            .icon{
+                margin-top: 15px;
+                img {
+                    border-radius: 0px !important;
+                }
+            }
+        }
+
+    }
+}
+
+
+#woocommerce-wrapper {
+    margin-top: 100px;
+    @media (max-width: $md) {
+        margin-top: 60px;
+    }
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper{
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden;
+}
+
+.product-image-instant-quote-holder {
+    background: $secendory-300;
+    padding: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+        color: $primary;
+    }
+    .desc {
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .product-price-holder {
+        margin-top: 10px;
+        background: $secendory-500;
+        padding: 10px 20px;
+        border: 4px dashed $primary;
+        border-radius: 20px;
+        font-size: 48px;
+        font-weight: bold;
+        .inc-gst{
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
+.hide-right-add-to-cart-button {
+    display: none;
+}
+
+.woocommerce-variation-price {
+    margin-top: 10px;
+    background: $secendory-500;
+    padding: 10px 20px;
+    border: 4px dashed $primary;
+    border-radius: 20px;
+    font-size: 48px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    .price .woocommerce-Price-amount {
+        color: white;
+    }
+    .inc-gst{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+}
+
+.single_add_to_cart_button {
+    font-size: 24px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black!important;
+    background: $primary  !important;
+    border-radius: none ;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    width: 100%;
+    
+}
+
+
